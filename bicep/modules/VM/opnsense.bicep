@@ -99,6 +99,11 @@ resource OPNsense 'Microsoft.Compute/virtualMachines@2021-03-01' = {
         }
       ]
     }
+    diagnosticsProfile: {
+       bootDiagnostics: {
+         enabled: true
+       }
+    }
   }
   plan: {
     name: '13_0-release'
